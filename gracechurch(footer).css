@@ -1,0 +1,528 @@
+/* global */
+
+:root {
+    --primaryColor: #ff6a48;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: '微軟正黑體';
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+body {
+    height: 3000px;
+}
+
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+img {
+    width: 100%;
+}
+
+/* 12 grid system for desktop */
+
+.full-width {
+    width: 100%;
+}
+
+.fixed-width {
+    width: 1200px;
+    margin: auto;
+}
+
+.col-1 {
+    width: calc(100% / 12 * 1);
+}
+
+.col-2 {
+    width: calc(100% / 12 * 2);
+}
+
+.col-3 {
+    width: calc(100% / 12 * 3);
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4);
+}
+
+.col-5 {
+    width: calc(100% / 12 * 5);
+}
+
+.col-6 {
+    width: calc(100% / 12 * 6);
+}
+
+.col-7 {
+    width: calc(100% / 12 * 7);
+}
+
+.col-8 {
+    width: calc(100% / 12 * 8);
+}
+
+.col-9 {
+    width: calc(100% / 12 * 9);
+}
+
+.col-10 {
+    width: calc(100% / 12 * 10);
+}
+
+.col-11 {
+    width: calc(100% / 12 * 11);
+}
+
+.col-12 {
+    width: calc(100% / 12 * 12);
+}
+
+/* .col-1 {
+    width: calc(100% / 12 * 1);
+    background-color: #0f0;
+}
+
+.col-2 {
+    width: calc(100% / 12 * 2);
+    background-color: #00f;
+}
+
+.col-3 {
+    width: calc(100% / 12 * 3);
+    background-color: #f0f;
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4);
+    background-color: #0ff;
+}
+
+.col-5 {
+    width: calc(100% / 12 * 5);
+    background-color: #999;
+}
+
+.col-6 {
+    width: calc(100% / 12 * 6);
+    background-color: #faa;
+}
+
+.col-7 {
+    width: calc(100% / 12 * 7);
+    background-color: #df5;
+}
+
+.col-8 {
+    width: calc(100% / 12 * 8);
+    background-color: #ea0;
+}
+
+.col-9 {
+    width: calc(100% / 12 * 9);
+    background-color: #a21;
+}
+
+.col-10 {
+    width: calc(100% / 12 * 10);
+    background-color: #54f;
+}
+
+.col-11 {
+    width: calc(100% / 12 * 11);
+    background-color: #a3d;
+}
+
+.col-12 {
+    width: calc(100% / 12 * 12);
+    background-color: #d01;
+} */
+
+[class*='col'] {
+    float: left;
+    padding: 15px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.fixed-width {
+    width: 1200px;
+    margin: auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primaryColor);
+    padding: 8px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn1 {
+    display: inline-block;
+    background-color: var(--primaryColor);
+    padding: 8px 20px;
+    color: #fff;
+    text-decoration: none;
+    border: 3px solid rgba(249, 198, 180, 0.7);
+}
+
+li {
+    float: left;
+    list-style: none;
+}
+
+body {
+    height: 200px;
+}
+
+p {
+    font-size: 14px;
+    color: #333;
+    line-height: 2em;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.nopa {
+    padding: 0;
+}
+
+/* nav-info  */
+
+#nav-info {
+    /* height: 60px;
+    background-color: #ccc;
+    line-height: 60px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* background-color: #ccc; */
+    position: absolute;
+    /* background-color: rgba(255, 255, 255, 0.75); */
+}
+
+#nav-info a {
+    /* text-decoration: none; */
+    padding: 8px 15px;
+    /* color: #000; */
+}
+
+#nav-info .addr {
+    float: left;
+    padding: 8px 15px;
+}
+
+#nav-info .register {
+    float: right;
+    padding: 8px 0;
+}
+
+#nav-info .donate {
+    float: right;
+}
+
+#nav-info .register li {
+    /* float: left;
+    list-style: none; */
+}
+
+h2 {
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.line {
+    position: relative;
+}
+
+.line::before {
+    content: '';
+    position: absolute;
+    border-top: 3px solid var(--primaryColor);
+    width: 60px;
+    top: 22px;
+    left: 1px;
+}
+
+.line-light {
+    position: relative;
+}
+
+.line-light::before {
+    content: '';
+    position: absolute;
+    border-top: 3px solid #fff;
+    width: 60px;
+    top: 22px;
+    left: 1px;
+}
+
+.line-light1 {
+    position: relative;
+}
+
+.line-light1::before {
+    content: '';
+    position: absolute;
+    border-top: 3px solid #fff;
+    width: 60px;
+    top: 10px;
+    left: 1px;
+}
+
+/* nav   */
+
+nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    top: 77px;
+    /* background-color: rgba(255, 255, 255, 0.75); */
+}
+
+nav .logo {
+    float: left;
+}
+
+nav .menu {
+    float: right;
+}
+
+nav a {
+    display: block;
+    padding: 8px 15px;
+}
+
+/* header  */
+
+header {
+    height: 800px;
+    background-image: url(../images/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* additional  */
+
+#additional {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(88, 86, 94, 0.75);
+    position: absolute;
+    top: calc(800px - 189px);
+}
+
+#additional .calendar {
+    background-color: var(--primaryColor);
+    text-align: center;
+    color: #fff;
+}
+
+#additional .btn2 {
+    display: block;
+    width: 220px;
+    height: 70px;
+    border: 3px solid #999;
+    text-align: center;
+    line-height: 70px;
+}
+
+/* feature */
+
+#feature {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* #feature h2,
+#gllery h2 {
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+} */
+
+#feature h3 {
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#feature p {
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+/* #feature .col-5 {
+    padding: 40px 60px;
+} */
+
+#feature .feature-galler {
+    padding: 40px 60px;
+    padding-bottom: 100px;
+}
+
+/* community */
+
+#community {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(rgba(255, 96, 96, 0.6), rgba(255, 96, 96, 0.6)), url(https://source.unsplash.com/random/1200x300);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+#community p {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    color: #fff;
+}
+
+#community h2 {
+    color: #fff;
+}
+
+/* gallery  */
+
+#gallery {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* upcoming  */
+
+#upcoming {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* 漸層+底圖 */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://source.unsplash.com/random/1200x400);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#upcoming .date {
+    background-color: var(--primaryColor);
+    text-align: center;
+    width: 80px;
+    height: 100px;
+    display: table;
+}
+
+#upcoming .day {
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+}
+
+#upcoming .content {
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    height: 100px;
+    display: table;
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+}
+
+#upcoming .title,
+.time,
+.addr {
+    display: table-cell;
+    vertical-align: middle;
+    width: calc(100% / 3);
+}
+
+#upcoming p {
+    color: #fff;
+    margin-top: -4px;
+}
+
+/* blog  */
+#blog {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#blog .pic {
+    position: relative;
+    margin-bottom: 20px;
+}
+#blog .pic .date {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: var(--primaryColor);
+    bottom: 4px;
+    text-align: center;
+    display: table;
+}
+
+#blog .pic .date .day {
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+}
+
+/* map  */
+
+/* footer   */
+footer {
+    height: 100px;
+    line-height: 100px;
+}
+
+footer .col-4 {
+    text-align: right;
+}
+
+footer .col-4 a {
+    margin: 0 10px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #aaa;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+}
+
+footer .col-4 a:hover {
+    border-color: #333;
+    color: #fff;
+}
